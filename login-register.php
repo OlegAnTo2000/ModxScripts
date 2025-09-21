@@ -130,7 +130,7 @@ $resourcesConfig = [
     fullname:required,
     email:required:email`
   &placeholderPrefix=`reg.`
-]] -->'
+]]'
 	],
 	[
 		'pagetitle' => 'Подтверждение регистрации',
