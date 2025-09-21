@@ -13,7 +13,15 @@ use MODX\Revolution\modResourceGroup;
 use MODX\Revolution\modAccessContext;
 use MODX\Revolution\modAccessPolicy;
 
-// https://itchief.ru/modx/login-registration
+/* https://itchief.ru/modx/login-registration
+- создать группу пользователей Users
+- создать группу ресурсов Users
+- дать группе пользователей Users доступ к web контексту Load, List and View
+- создать ресурсы Регистрация, Подтверждение регистрации, Авторизация, Восстановление пароля, Личный кабинет, Изменение пароля, Редактирование данных
+- добавить ресурсы «Личный кабинет», «Изменение пароля» и «Редактирование данных» в группу ресурсов Users
+- дать группе анонимов доступ Load only к группе ресурсов Users, чтобы у них выходила ошибка доступ запрещен 403
+- задать системную настройку unauthorized_page = страница авторизации
+*/
 
 /** @var modX $modx */
 $modx->initialize('mgr');
