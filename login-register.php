@@ -1,6 +1,5 @@
 <?php
 
-
 use MODX\Revolution\Processors\System\Settings\Update as SettingUpdate;
 use MODX\Revolution\Processors\Security\Group\Create as UserGroupCreate;
 use MODX\Revolution\Processors\Security\ResourceGroup\Create as ResourceGroupCreate;
@@ -13,6 +12,8 @@ use MODX\Revolution\modUserGroup;
 use MODX\Revolution\modResourceGroup;
 use MODX\Revolution\modAccessContext;
 use MODX\Revolution\modAccessPolicy;
+
+// https://itchief.ru/modx/login-registration
 
 /** @var modX $modx */
 $modx->initialize('mgr');
